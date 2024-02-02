@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-family: 'Exo', sans-serif;
+            background-color: black;
+            
+        }
+        .body {
+            text-align: center;
+            margin-top: 20px; /* Add margin to separate the header and body */
+            color: white;
+            margin-left: 20%;
+            width: 60%;
+
+        }
+
+        .img {
+            margin-top: 20px; /* Add margin to separate the body and image */
+             /* Add margin to separate the body and image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+           
+        }
+        .img img {
+            width: 60%; /* Set the image width to 80% of its container */
+             /* Remove any default inline spacing */
+            margin: 0 auto; /* Center the image horizontally within the container */
+            align-content: center;
+            
+        }
+        
+        .all {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            background-color: black;
+            height: 100vh;
+        }
+        .header {
+            background: black;
+            width: fit-content;
+            height: 10%;
+            display: flex;
+            align-items: flex-start; 
+            justify-content: flex-start; 
+        }
+        
+          nav {
+            background: black;
+            border-radius: 50px;
+            padding: 10px;
+            box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+          }
+          nav li {
+            list-style: none;
+            display: inline-block;
+            padding: 15px 35px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+            transition: color 0.5s;
+          }
+          
+          @media only screen and (max-width: 600px) {
+            /* Styles for screens with a maximum width of 600px */
+            .all {
+                height: auto; /* Adjust the height for smaller screens */
+            }
+    
+            .header {
+                height: auto; /* Adjust the height for smaller screens */
+            }
+    
+            nav li {
+                padding: 10px 20px; /* Adjust padding for smaller screens */
+            }
+    
+            .body {
+                margin-top: 10px; /* Adjust the margin for smaller screens */
+            }
+    
+            .img {
+                margin-top: 10px; /* Adjust the margin for smaller screens */
+            }
+        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <a href="tictactoe.html">
+            <li>Tic Tac Toe</li>
+            </a>
+            <a href="whack.html">
+            <li>Matching cards</li> 
+            </a>
+            <a href="rock.html">
+            <li>Rocks, Papers, Scissors</li>
+            </a>
+        </nav>
+    </div>
+    <div class="body">
+        <h1>Games</h1>
+        <br><br><br>
+        <h3>Above are three games you can play if you feel boring.</h3>
+    </div>
+    
+</body>
+</html>
